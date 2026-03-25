@@ -100,7 +100,7 @@ public class DragHandler : MonoBehaviour
 
     void Attack(EnemyUnit enemy)
     {
-        NumberUnit me =
+/*        NumberUnit me =
             GetComponent<NumberUnit>();
 
         int dmg = me.value;
@@ -110,7 +110,7 @@ public class DragHandler : MonoBehaviour
         transform.position = startPos;
 
         OperatorManager.Instance.currentMode =
-            GameModeType.None;
+            GameModeType.None;*/
     }
 
     private void Merge(NumberUnit other)

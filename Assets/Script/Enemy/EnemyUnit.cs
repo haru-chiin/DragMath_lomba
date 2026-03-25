@@ -1,20 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 
 public class EnemyUnit : MonoBehaviour
 {
-    public int hp = 20;
+    public TMP_Text targetDisplay;
 
-    public void TakeDamage(int dmg)
+    public void SetTarget(int target)
     {
-        hp -= dmg;
-
-        Debug.Log("Enemy HP = " + hp);
-
-        if (hp <= 0)
+        if (targetDisplay != null)
         {
-            gameObject.SetActive(false);
+            targetDisplay.text = "" + target;
         }
     }
 }

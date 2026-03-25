@@ -12,6 +12,11 @@ public class OperatorManager : MonoBehaviour
     public int multiplyCount = 1;
     public int divideCount = 1;
 
+    public int defaultPlusCount = 2;
+    public int defaultMinusCount = 1;
+    public int defaultMultiplyCount = 1;
+    public int defaultDivideCount = 1;
+
     void Awake()
     {
         Instance = this;
@@ -78,5 +83,16 @@ public class OperatorManager : MonoBehaviour
         currentOperator = OperatorType.None;
 
         Debug.Log("Mode = Attack");
+    }
+
+    public void ResetOperators()
+    {
+        plusCount = defaultPlusCount;
+        minusCount = defaultMinusCount;
+        multiplyCount = defaultMultiplyCount;
+        divideCount = defaultDivideCount;
+
+        currentOperator = OperatorType.None;
+        currentMode = GameModeType.None;
     }
 }

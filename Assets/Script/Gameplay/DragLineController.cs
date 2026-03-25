@@ -163,15 +163,15 @@ public class DragLineController : MonoBehaviour
 
     void Attack()
     {
-        EnemyUnit enemy =
-            targetUnit.GetComponent<EnemyUnit>();
+        EnemyUnit enemy = targetUnit.GetComponent<EnemyUnit>();
 
         if (enemy == null) return;
 
-        int dmg =
-            startUnit.numberUnit.value;
+        int attackValue = startUnit.numberUnit.value;
 
-        enemy.TakeDamage(dmg);
+        StageManager.Instance.EvaluateAttack(attackValue);
+
+        OperatorManager.Instance.currentMode = GameModeType.None;
     }
 
     int Calculate(int a, int b)
