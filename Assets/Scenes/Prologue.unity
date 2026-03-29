@@ -363,7 +363,7 @@ MonoBehaviour:
     backgroundImage: {fileID: 21300000, guid: 5764ccb05ec1b8a44913a0b6b7b9ba2a, type: 3}
   backgroundDisplay: {fileID: 994077427}
   dialogueDisplayText: {fileID: 836639538}
-  nextSceneName: BattleScene 1
+  nextSceneName: MapChoose
   typingSpeed: 0.05
 --- !u!4 &369432445
 Transform:

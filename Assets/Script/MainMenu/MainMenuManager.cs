@@ -26,6 +26,8 @@ public class MainMenuManager : MonoBehaviour
         {
             collectionPanel.SetActive(false);
         }
+
+        BGMManager.Instance.PlayChill();
     }
 
     public void OnClickStart()

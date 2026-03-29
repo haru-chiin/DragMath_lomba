@@ -159,6 +159,11 @@ public class DragLineController : MonoBehaviour
         OperatorManager.Instance.UseOperator();
 
         UnitManager.Instance.DisableUnit(startUnit.gameObject);
+
+        if (SFXManager.Instance != null)
+        {
+            SFXManager.Instance.PlayMerge();
+        }
     }
 
     void Attack()

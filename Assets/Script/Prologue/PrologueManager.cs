@@ -45,6 +45,11 @@ public class PrologueManager : MonoBehaviour
     {
         if (Input.GetMouseButtonDown(0))
         {
+            if (SFXManager.Instance != null)
+            {
+                SFXManager.Instance.PlayClick();
+            }
+
             if (isTyping)
             {
                 CompleteText();
