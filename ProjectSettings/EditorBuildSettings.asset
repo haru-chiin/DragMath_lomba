@@ -5,19 +5,19 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Settings/Scenes/URP2DSceneTemplate.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 14d5ec240ae3a6c48919c3753cb8e01a
   - enabled: 1
     path: Assets/Scenes/Prologue.unity
     guid: 221e91e3416da14489432a2889c2777e
   - enabled: 1
-    path: Assets/Scenes/BattleScene 1.unity
-    guid: b24c0f40429ca694b9ca57fa8826e3ce
-  - enabled: 1
     path: Assets/Scenes/MapChoose.unity
     guid: 6fa02b6a96184dd448609abb10ff6eb4
   - enabled: 1
-    path: Assets/Scenes/MainMenu.unity
-    guid: 14d5ec240ae3a6c48919c3753cb8e01a
+    path: Assets/Scenes/BattleScene 1.unity
+    guid: b24c0f40429ca694b9ca57fa8826e3ce
   m_configObjects: {}
